@@ -67,7 +67,7 @@ __inline void Core_SetOutPtr(IXCore *pCore)
 	*stdout = *fOut;
 	*stderr = *fOut;
 
-	fOut->_file = 1;
+//	fOut->_file = 1;
 }
 
 #define INIT_OUTPUT_STREAM(icore) Core_SetOutPtr(icore)

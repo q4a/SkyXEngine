@@ -41,7 +41,7 @@ CTimeManager::CTime::~CTime()
 
 void CTimeManager::update()
 {
-	time_point tcurr = std::chrono::high_resolution_clock::now();
+	std::chrono::time_point<std::chrono::high_resolution_clock> tcurr = std::chrono::high_resolution_clock::now();
 	
 	CTime* tobj = 0;
 	for (int i = 0; i < m_aTimes.size(); ++i)
@@ -132,7 +132,7 @@ int64_t CTimeManager::timeTotalMcsGetU(ID id)
 	if (!tobj->m_isWorking)
 		return tobj->m_iTimeTotal;
 
-	time_point tcurr = std::chrono::high_resolution_clock::now();
+	std::chrono::time_point<std::chrono::high_resolution_clock> tcurr = std::chrono::high_resolution_clock::now();
 
 	return tobj->m_iTimeTotal + (int64_t)((long double)std::chrono::duration_cast<std::chrono::microseconds>(tcurr - tobj->m_timePoint).count() * tobj->m_fSpeed);
 }

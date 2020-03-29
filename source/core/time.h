@@ -32,7 +32,7 @@ public:
 		CTime();
 		~CTime();
 
-		time_point m_timePoint;
+		std::chrono::time_point<std::chrono::high_resolution_clock> m_timePoint;
 		int64_t m_iTimeTotal;		//общее прошедшее время с момента запуска
 		long double m_fDeltaFraction;
 		int64_t m_iUnixtimeCurr;	//текущее время в unix
