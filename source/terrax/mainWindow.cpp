@@ -6,7 +6,6 @@
 
 #include "resource.h"
 #include <commctrl.h>
-#include <combaseapi.h>
 
 #include <dwmapi.h>
 #pragma comment(lib, "dwmapi.lib")
