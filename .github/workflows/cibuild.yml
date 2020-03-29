@@ -1,0 +1,24 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build-windows:
+    runs-on: windows-2019
+    strategy:
+      fail-fast: false
+      matrix:
+        Configuration: [Debug, Release]
+        Platform: [x64, Win32]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
+    - name: Setup
+      run: |
+        git submodule update --init --recursive
+    - name: MSBuild
+      working-directory: proj\SkyXEngine\vs2013
+      run: msbuild /p:Configuration=${{ matrix.Configuration }} /p:Platform=${{ matrix.Platform }} SkyXEngine.sln
