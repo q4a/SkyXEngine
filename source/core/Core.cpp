@@ -308,7 +308,7 @@ void CCore::runUpdate()
 {
 	static Array<ID> s_aIdToWait;
 	ID idTask;
-	std::chrono::time_point<std::chrono::high_resolution_clock> tNow = std::chrono::high_resolution_clock::now();
+	time_point tNow = std::chrono::high_resolution_clock::now();
 	float fDeltaTime = (float)std::chrono::duration_cast<std::chrono::microseconds>(tNow - m_tLastUpdateTime).count() / 1000000.0f;
 	m_tLastUpdateTime = tNow;
 

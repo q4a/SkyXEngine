@@ -23,11 +23,11 @@ namespace gui
 
 				struct point
 				{
-					float x;
-					float y;
-					float z;
-					float tx;
-					float ty;
+					int x;
+					int y;
+					int z;
+					int tx;
+					int ty;
 				};
 
 			protected:
