@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <TargetName>$(ProjectName)_d</TargetName>
-    <IncludePath>../../../sdks/bullet3/src;../../../sdks/;$(VC_IncludePath);$(WindowsSDK_IncludePath);../../../source</IncludePath>
+    <IncludePath>../../../sdks/bullet3/src;../../../sdks/;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);../../../source</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);../../../libs</LibraryPath>
     <SourcePath>$(VC_SourcePath);../../../source</SourcePath>
     <OutDir>../../../build/bin/</OutDir>
@@ -50,7 +50,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../../build/bin/</OutDir>
-    <IncludePath>../../../sdks/bullet3/src;../../../sdks/;$(VC_IncludePath);$(WindowsSDK_IncludePath);../../../source</IncludePath>
+    <IncludePath>../../../sdks/bullet3/src;../../../sdks/;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);../../../source</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);../../../libs</LibraryPath>
     <SourcePath>$(VC_SourcePath);../../../source</SourcePath>
   </PropertyGroup>
