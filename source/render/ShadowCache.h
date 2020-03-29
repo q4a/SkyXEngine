@@ -21,15 +21,7 @@ public:
 	CShadowCache(IXRenderPipeline *pRenderPipeline, IXMaterialSystem *pMaterialSystem);
 	~CShadowCache();
 
-	void* operator new(size_t i)
-	{
-		return _mm_malloc(i, 16);
-	}
-
-	void operator delete(void* p)
-	{
-		_mm_free(p);
-	}
+	SX_ALIGNED_OP_MEM2();
 
 	//! Установка количества лампочек, инициализация кэша
 	void setLightsCount(UINT iPoints, UINT iSpots, bool hasGlobal);
