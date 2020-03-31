@@ -116,8 +116,8 @@
       <Profile>true</Profile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapidx11.* ..\..\..\build\bin\</Command>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapiogl.* ..\..\..\build\bin\</Command>
+      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapidx11.* ..\..\..\build\bin\
+copy /y ..\..\..\sdks\graphix\build\bin\gxgapiogl.* ..\..\..\build\bin\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,8 +139,8 @@
       <Profile>true</Profile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapidx11.* ..\..\..\build\bin64\</Command>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapiogl.* ..\..\..\build\bin64\</Command>
+      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapidx11.* ..\..\..\build\bin64\
+copy /y ..\..\..\sdks\graphix\build\bin64\gxgapiogl.* ..\..\..\build\bin64\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -164,8 +164,8 @@
       <ImportLibrary>../../../libs/$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapidx11.* ..\..\..\build\bin\</Command>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapiogl.* ..\..\..\build\bin\</Command>
+      <Command>copy /y ..\..\..\sdks\graphix\build\bin\gxgapidx11.* ..\..\..\build\bin\
+copy /y ..\..\..\sdks\graphix\build\bin\gxgapiogl.* ..\..\..\build\bin\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -189,8 +189,8 @@
       <ImportLibrary>../../../libs64/$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapidx11.* ..\..\..\build\bin64\</Command>
-      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapiogl.* ..\..\..\build\bin64\</Command>
+      <Command>copy /y ..\..\..\sdks\graphix\build\bin64\gxgapidx11.* ..\..\..\build\bin64\
+copy /y ..\..\..\sdks\graphix\build\bin64\gxgapiogl.* ..\..\..\build\bin64\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
