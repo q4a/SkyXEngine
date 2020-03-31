@@ -6,4 +6,4 @@
 	url = https://dev.ds-servers.com/sip/common.git
 [submodule "sdks/graphix"]
 	path = sdks/graphix
-	url = https://dev.ds-servers.com/sip/graphix.git
+	url = https://github.com/q4a/SkyXEngine-graphix.git
