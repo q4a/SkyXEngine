@@ -9,11 +9,11 @@ $OldToolsets = @(
 $Paths = @(
 "proj",
 "sdks/bullet3/build3/vs2010",
+"sdks/freetype-2.6/builds/windows/vc2013/",
 "sdks/freetype-2.10.0/builds/windows/vc2010/",
 "sdks/graphix/proj/",
 "sdks/graphix/sdks/common/proj/",
-"sdks/ogg/libogg/win32/VS2010/",
-"sdks/ogg/libvorbis/win32/VS2010/",
+"sdks/mital/proj/vs2013/mital/",
 "source/common/proj/"
 )
 
